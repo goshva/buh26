@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article id="main">
+    <header class="special container">  
+	    <span class="icon fa-file-text"></span>
+     <h2>{{.Title}}</h2>
+     <p>{{.Description}}</p>
+     {{ if .Params.anchors}}
+       <ul class="buttons">
+       {{ range sort .Params.anchors ".url" }}
+         <li>
+		 <a  class="button small" href="#{{ .url }}"> {{ .text }} </a>
+	 </li>
+       {{ end }}
+     {{ end }}
+</header>
+<section class="wrapper style4 container">
+        {{.Content}}
+        price list
+</section>     
+</article>
+{{ end }}

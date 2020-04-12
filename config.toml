@@ -1,0 +1,11 @@
+baseURL = "http://buhuchet26.ru/"
+languageCode = "ru-ru"
+title = "My New Hugo Site"
+theme = ["Umis"]
+[params]
+  author = "Nikola Tesla"
+  description = "Tesla's Awesome Hugo Site"
+  keywords = "Tesla's Awesome Hugo Site"
+[taxonomies]
+  category = "categories"
+  tag = "tags"

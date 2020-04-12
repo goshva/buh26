@@ -1,0 +1,30 @@
+  <!-- Header -->
+   <header id="header">
+    <h3 id="logo"><a href="/">БУХГАЛТЕРСКИЕ<span> УСЛУГИ на Кавминводах</span></a></h3>
+    <nav id="nav">
+     <ul>
+      <li class="current"><a href="/">ГЛАВНАЯ</a></li>
+      <li class="submenu">
+       <a href="">Услуги и цены</a>
+       <ul>
+        {{ range .Site.Taxonomies.categories.pricelist }}
+            <li>
+              <a href="{{.Permalink}}">{{.Title}}</a>
+            </li>
+        {{ end }}
+       </ul>
+      </li>
+      <li class="submenu">
+          <a href="">Новости</a>
+          <ul>
+          {{ range .Site.Taxonomies.categories.news }}
+            <li>
+              <a href="{{.Permalink}}">{{.Title}}</a>
+            </li>
+          {{ end }}
+           </ul>
+                        </li>
+      <li><a href="/contacts" class="button special">Контакты</a></li>
+     </ul>
+    </nav>
+   </header>

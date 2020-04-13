@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /css
-Disallow: /fonts
-Disallow: /js
-Disallow: /js_mail
-Disallow: /mail
-Sitemap: http://www.buhuchet26.ru/sitemap.xml

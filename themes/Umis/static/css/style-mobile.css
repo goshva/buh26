@@ -167,3 +167,6 @@
 	#footer {
 		padding: 3em 1.5em;
 	}
+	#footer p{
+		text-align:center;
+	}

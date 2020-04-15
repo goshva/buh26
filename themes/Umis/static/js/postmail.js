@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const forms = document.getElementsByTagName('form');
+    for (let i = 0; i < forms.length; i++) {
+        forms[i].addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            sendmail();
+            this.reset(); 
+        });
+    };
+});
+
+
 function sendmail(){
 var data = new FormData();
 data.append("name", document.getElementById('name').value);

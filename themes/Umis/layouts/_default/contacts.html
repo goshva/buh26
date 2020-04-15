@@ -34,21 +34,21 @@
             </div>
             <div class="response-error-message"></div>
                 <label class="name">
-                  <input type="text" name="name" placeholder="Имя:" value="" />
+                  <input id="name" type="text" name="name" placeholder="Имя:" value="" />
                   <span class="empty-message">*Заполните поле ИМЯ.</span>
                 </label>
                 <label class="email">
-                  <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+                  <input id="email" type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
                   <span class="empty-message">*Заполните поле email.</span>
                   <span class="error-message">*неверный формат поля</span>
                 </label>
                 <label class="phone">
-                  <input type="text" name="phone" placeholder="Телефон:" value="" data-constraints="@Required @JustNumbers"/>
+                  <input id="phone" type="text" name="phone" placeholder="Телефон:" value="" data-constraints="@Required @JustNumbers"/>
                   <span class="empty-message">*Заполните поле ТЕЛЕФОН.</span>
                   <span class="error-message">*Телефон должен состоять из цифр без пробелов.</span>
                 </label>
                 <label class="message">
-                  <textarea name="message" placeholder="Сообщение:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                  <textarea id="message"  name="message" placeholder="Сообщение:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
                   <span class="empty-message">*Заполните поле СООБЩЕНИЕ.</span>
                   <span class="error-message">*Минимальная длина для сообщения 20 символов.</span>
 				 
@@ -56,7 +56,7 @@
                 
                <div class="btns">
                   <a href="#" data-type="reset" class="btn">очистить</a>
-                  <button href="#" data-type="submit" class="btn" onsubmit="yaCounter35314165.reachGoal('vopros')">отправить</button>
+                  <button href="#" data-type="submit" class="btn" onsubmit="yaCounter35314165.reachGoal('vopros')" onclick="sendmail()" >отправить</button>
                 </div>
           </form>
     

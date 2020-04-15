@@ -1,5 +1,6 @@
 <?php
-	$owner_email='info@buhuchet26.ru';
+//	$owner_email='info@buhuchet26.ru';
+	$owner_email='sha.egor@gmail.com';
 	//$owner_email='gowlad@yandex.ru';
 	//SMTP server settings	
 	$host = 'ssl://smtp.gmail.com';

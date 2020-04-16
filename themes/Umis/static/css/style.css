@@ -28,8 +28,8 @@
 	}
 
 	body, input, select, textarea {
-		color: #7c8081;
-		font-family: 'Open Sans Condensed', verdana;
+		color: #000;
+		font-family: 'Roboto Condensed';
 		font-size: 15pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
@@ -581,6 +581,7 @@
 		  display: block;
                   margin-left: auto;
                   margin-right: auto;
+                  max-width: 100%;
 		}
 
 /* Header */
@@ -595,9 +596,8 @@
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
-		font-size: 0.8em;
 		left: 0;
-		padding: 1em 1.5em;
+		padding: 1em 1em 0 1em;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -605,6 +605,7 @@
 	}
 
 		#header h1 {
+			E
 			font-size: 2em;
 			font-weight: 900;
 			margin: 0;
@@ -619,7 +620,7 @@
 			position: absolute;
 			right: 1.5em;
 			text-transform: uppercase;
-			top: 0.75em;
+			top: 1em;
 		}
 
 			#header nav ul li {
@@ -664,7 +665,8 @@
 					-o-transition: all 0.2s ease-in-out;
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
-					background: rgba(188, 202, 206, 0.15);
+					background: #a76281;
+					color: #fff;
 				}
 
 				#header nav ul li.current > a {
@@ -715,7 +717,7 @@
 		.dropotron.level-0 {
 			font-size: 0.7em;
 			font-weight: 400;
-			margin-top: 1.5em;
+			margin-top: 2.5em;
 		}
 
 			.dropotron.level-0:before {
@@ -745,7 +747,7 @@
 			}
 
 			.dropotron > li:hover > a {
-				background: #83d3c9;
+				background: #a76281;
 				color: white;
 			}
 
@@ -1049,7 +1051,7 @@
 /****Form****/
 		
 .btn {
-    font: 30px/30px 'Open Sans Condensed', verdana;
+    font: 30px/30px 'Roboto Condensed', sans-serif;
     display: inline-block;
     border: 1px solid #E4D4D4;
     color: #3a3838;

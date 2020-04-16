@@ -30,7 +30,7 @@
 		section:first-child {
 			margin-top: 0;
 		}
-
+#sidePanel { width:100%!important };
 /* Button */
 
 	.button.small {

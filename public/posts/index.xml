@@ -6,10 +6,20 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <lastBuildDate>Sat, 25 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://buhuchet26.ru/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Как выбрать бухгалтера?</title>
+      <link>http://buhuchet26.ru/posts/idelbugh/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://buhuchet26.ru/posts/idelbugh/</guid>
+      <description>Каким должен быть идеальный бухгалтер? Внимательный, ответственный, честный, грамотный. Но бывает так, что за идеальной маской , скрываются некомпетентность и желание обмануть. Как понять, что за приятной внешностью скрывается человек без достаточной базы знаний? Вот несколько признаков некомпетентности бухгалтера:
+ Сформированный отчет о задолженности покупателей и поставщиков недостоверный. Отчеты сдаются не вовремя. Бухгалтер не может объяснить как сформировалась сумма налога . Бухгалтер ничего не успевает. Документы не подшиваются в нужном порядке.</description>
+    </item>
     
     <item>
       <title>Сравнение ИП и ООО</title>

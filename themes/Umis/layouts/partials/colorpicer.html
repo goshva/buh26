@@ -1,0 +1,35 @@
+<style>
+  .colorPicker {
+    z-index: 100000;
+    display: inline-flex;
+  }
+</style>
+
+<!-- <input type="color" value="#ff0000" id="--font-color" class="colorPicker" /> -->
+<input type="color" value="#ff0000" id="--heading-color" class="colorPicker" />
+<input type="color" value="#ff0000" id="--bg-color" class="colorPicker" />
+<input type="color" value="#ff0000" id="--services-bg" class="colorPicker" />
+<input
+  type="color"
+  value="#ff0000"
+  id="--secondary-color"
+  class="colorPicker"
+/>
+<script>
+  //
+  function watchColorPickerBg(event) {
+    console.log(event.target.id);
+    document.documentElement.style.setProperty(
+      event.target.id,
+      event.target.value
+    );
+  }
+  let elementsArray = document.querySelectorAll("input");
+  elementsArray.forEach(function (elem) {
+    elem.value = getComputedStyle(document.documentElement).getPropertyValue(
+      elem.id
+    );
+    console.log(elem.value);
+    elem.addEventListener("input", watchColorPickerBg, false);
+  });
+</script>

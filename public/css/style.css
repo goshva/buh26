@@ -2,12 +2,75 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
-/*
-	Twenty 1.0 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+:root {
+    --primary-color:#302AE6;
+    --secondary-color:#B75716;
+    --font-color:#424242;
+    --bg-color:#645862;
+	--heading-color:#A76281;
+	--services-bg:#ed7f1a;
+}
 
+
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+	display: flex;
+	align-items: center;
+  
+	em {
+	  margin-left: 10px;
+	  font-size: 1rem;
+	}
+  }
+  .theme-switch {
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	width: 60px;
+  }
+  
+  .theme-switch input {
+	display:none;
+  }
+  
+  .slider {
+	background-color: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	background-color: #fff;
+	bottom: 4px;
+	content: "";
+	height: 26px;
+	left: 4px;
+	position: absolute;
+	transition: .4s;
+	width: 26px;
+  }
+  
+  input:checked + .slider {
+	background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+	transform: translateX(26px);
+  }
+  
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
 /* Basic */
 
 	body, #skel-layers-wrapper {
@@ -543,7 +606,7 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #B75716;
+			background-color: var(--secondary-color);;
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -592,7 +655,7 @@
 	@keyframes reveal-header { 0% { top: -5em; } 100% { top: 0; } }
 
 	#header {
-		background: #A76281;
+		background: var(--heading-color);;
 		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
 		color: inherit;
 		cursor: default;
@@ -665,7 +728,7 @@
 					-o-transition: all 0.2s ease-in-out;
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
-					background: #a76281;
+					background: var(--heading-color);;
 					color: #fff;
 				}
 
@@ -747,7 +810,7 @@
 			}
 
 			.dropotron > li:hover > a {
-				background: #a76281;
+				background: var(--heading-color);;
 				color: white;
 			}
 
@@ -764,8 +827,8 @@
 
 	#banner {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+		background-color: var(--bg-color);;
+		 /* background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../images/banner.jpg");*/
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;
@@ -786,7 +849,7 @@
 			-o-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(237, 127, 26, 0.7);
+			background: var(--services-bg);;
 			color: white;
 			display: inline-block;
 			opacity: 0;
@@ -864,7 +927,7 @@
 
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #645862;
+		background-color: var(--bg-color);;
 		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -1060,7 +1123,7 @@
 }
 
 .btn:hover {
-    background-color: #A76281
+    background-color: var(--heading-color);
 	
 	;
     color: #fff;

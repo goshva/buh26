@@ -1,30 +1,35 @@
-  <!-- Header -->
-   <header id="header">
-    <h3 id="logo"><a href="/">БУХГАЛТЕРСКИЕ<span> УСЛУГИ на Кавминводах</span></a></h3>
-    <nav id="nav">
-     <ul>
-      <li class="current"><a  class="button special" href="/posts/action120520/">Акция</a></li>
-      <li class="submenu">
-       <a href="">Услуги и цены</a>
-       <ul>
-        {{ range .Site.Taxonomies.categories.pricelist }}
-            <li>
-              <a href="{{.Permalink}}">{{.Title}}</a>
-            </li>
-        {{ end }}
-       </ul>
+<!-- Header -->
+<header id="header">
+  <h3 id="logo">
+    <a href="/">БУХГАЛТЕРСКИЕ<span> УСЛУГИ на Кавминводах</span></a>
+  </h3>
+  <nav id="nav">
+    <ul>
+      <li class="current">{{- partial "colorpicer.html" . -}}</li>
+      <li class="current">
+        <a class="button special" href="/posts/action120520/">Акция</a>
       </li>
       <li class="submenu">
-          <a href="/posts">Новости</a>
-          <ul>
-          {{ range .Site.Taxonomies.categories.news }}
-            <li>
-              <a href="{{.Permalink}}">{{.Title}}</a>
-            </li>
+        <a href="">Услуги и цены</a>
+        <ul>
+          {{ range .Site.Taxonomies.categories.pricelist }}
+          <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          </li>
           {{ end }}
-           </ul>
-                        </li>
+        </ul>
+      </li>
+      <li class="submenu">
+        <a href="/posts">Новости</a>
+        <ul>
+          {{ range .Site.Taxonomies.categories.news }}
+          <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </li>
       <li><a href="/contacts">Контакты</a></li>
-     </ul>
-    </nav>
-   </header>
+    </ul>
+  </nav>
+</header>

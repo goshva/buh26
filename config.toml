@@ -1,4 +1,5 @@
-baseURL = "http://buhuchet26.ru/"
+#baseURL = "http://buhuchet26.ru/"
+baseURL = "http://aeroki.ru/"
 defaultContentLanguage = "ru"
 languageCode = "ru-ru"
 title = "My New Hugo Site"

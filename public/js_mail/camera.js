@@ -1,6 +1,6 @@
 // Camera slideshow v1.3.3 - a jQuery slideshow with many effects, transitions, easy to customize, using canvas and mobile ready, based on jQuery 1.4+
 // Copyright (c) 2012 by Manuel Masia - www.pixedelic.com
-// Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+// Licensed under the MIT license: https://www.opensource.org/licenses/mit-license.php
 ;(function($){$.fn.camera = function(opts, callback) {
 	
 	var defaults = {
@@ -16,7 +16,7 @@
 		
 		cols				: 6,
 		
-		easing				: 'easeInOutExpo',	//for the complete list http://jqueryui.com/demos/effect/easing.html
+		easing				: 'easeInOutExpo',	//for the complete list https://jqueryui.com/demos/effect/easing.html
 		
 		mobileEasing		: '',	//leave empty if you want to display the same easing on mobile devices and on desktop etc.
 		
